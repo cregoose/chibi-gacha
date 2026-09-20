@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нарисуй кота</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-button">Главная</a>
+        <a href="collection.html" class="nav-button">Моя коллекция</a>
+        <a href="tasks.html" class="nav-button">Задания</a>
+    </nav>
+
+    <main class="game">
+        <h1>Нарисуй кота!</h1>
+        <p>Нарисуй любого кота и получи 2 крутки.</p>
+
+        <div class="drawing-tools">
+            <label>
+                Размер кисти:
+                <input type="range" id="brushSize" min="2" max="50" value="10">
+            </label>
+            <button id="brushButton">Кисть</button>
+            <button id="eraserButton" style="background: #A19DA4;">Ластик</button>
+        </div>
+
+        <div class="drawing-area">
+            <div class="color-palette">
+                <button class="color-button active" data-color="#5E604D" style="background-color: #5E604D;"></button>
+                <button class="color-button" data-color="#ffffff" style="background-color: #ffffff;"></button>
+                <button class="color-button" data-color="#DB827F" style="background-color: #DB827F;"></button>
+                <button class="color-button" data-color="#ffb347" style="background-color: #ffb347;"></button>
+                <button class="color-button" data-color="#ffe66d" style="background-color: #ffe66d;"></button>
+                <button class="color-button" data-color="#7bd389" style="background-color: #7bd389;"></button>
+                <button class="color-button" data-color="#6ec6ff" style="background-color: #6ec6ff;"></button>
+                <button class="color-button" data-color="#A19DA4" style="background-color: #A19DA4;"></button>
+                <button class="color-button" data-color="#d291ff" style="background-color: #d291ff;"></button>
+            </div>
+            <canvas id="drawingCanvas" width="700" height="500"></canvas>
+        </div>
+        
+        <br>
+        <button id="finishDrawing">Готово</button>
+    </main>
+
+    <script src="game.js"></script>
+    <script>
+        const drawingType = "cat";
+        const taskId = "draw-cat";
+    </script>
+    <script src="draw.js"></script>
+</body>
+</html>

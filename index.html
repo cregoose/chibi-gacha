@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chibi Gacha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-button">Главная</a>
+        <a href="collection.html" class="nav-button">Моя коллекция</a>
+        <a href="tasks.html" class="nav-button">Задания</a>
+    </nav>
+
+    <main class="game">
+        <div class="pity-wrapper">
+            <div class="pity-text">Шкала удачи</div>
+            <div class="pity-bar">
+                <div class="pity-fill" id="pityFill"></div>
+            </div>
+        </div>
+        <h1>CHIBI GACHA</h1>
+        <div class="machine">
+            <div id="machineVisual">
+                <img src="assets/machine.png" alt="Гача-автомат" class="machine-img">
+            </div>
+            
+            <div id="result">
+                <div class="placeholder">?</div>
+            </div>
+
+            <button id="rollButton">КРУТИТЬ!</button>
+            
+            <p>Крутки: <span id="rolls" style="font-weight: bold; color: #DB827F;">10</span></p>
+        </div>
+
+        <section class="collection">
+            <h2>История круток</h2>
+            <div id="collection">Пока здесь ничего нет...</div>
+        </section>
+    </main>
+
+    <script src="items.js"></script>
+    <script src="game.js"></script>
+    <script src="collection.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

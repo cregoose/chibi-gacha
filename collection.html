@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя коллекция</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-button">Главная</a>
+        <a href="collection.html" class="nav-button">Моя коллекция</a>
+        <a href="tasks.html" class="nav-button">Задания</a>
+    </nav>
+
+    <main class="game">
+        <h1>Моя коллекция</h1>
+
+        <div id="emptyCollection" class="empty-collection">
+            У тебя пока нет предметов.
+        </div>
+
+        <section id="collectionCarousel" class="collection-carousel">
+            <div class="carousel-items">
+                <button id="previousItem" class="carousel-arrow">‹</button>
+                <div id="leftItem" class="carousel-side-item"></div>
+                <div id="selectedItem" class="carousel-selected-item"></div>
+                <div id="rightItem" class="carousel-side-item"></div>
+                <button id="nextItem" class="carousel-arrow">›</button>
+            </div>
+            <p id="itemCounter" class="item-counter"></p>
+        </section>
+
+        <!-- Модальное окно редактора -->
+        <section id="characterEditor" class="character-editor">
+            <div class="editor-overlay"></div>
+            <div class="editor-content">
+                <!-- Левая часть: чибик со смещением влево -->
+                <div class="editor-character">
+                    <div id="characterPreview" class="character-preview"></div>
+                </div>
+
+                <!-- Правая часть: боковая панель выбора предметов -->
+                <div class="editor-panel">
+                    <div class="editor-header">
+                        <h2>Редактор</h2>
+                        <button id="closeEditor" class="close-editor">✕</button>
+                    </div>
+
+                    <div id="editorCategories" class="editor-categories"></div>
+                    <div id="editorItems" class="editor-items"></div>
+
+                    <div class="editor-footer">
+                        <button id="saveEditor" class="save-button">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="items.js"></script>
+    <script src="game.js"></script>
+    <script src="collection.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

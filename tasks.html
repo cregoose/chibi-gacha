@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Задания</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="nav-button"
+        >
+            Главная
+        </a>
+
+        <a
+            href="collection.html"
+            class="nav-button"
+        >
+            Моя коллекция
+        </a>
+
+        <a
+            href="tasks.html"
+            class="nav-button"
+        >
+            Задания
+        </a>
+
+    </nav>
+
+
+    <main class="game">
+
+        <div class="tasks-header">
+
+            <button
+                id="previousDay"
+                class="day-arrow"
+            >
+                ‹
+            </button>
+
+
+            <div>
+
+                <h1 id="dayTitle">
+                    День 1
+                </h1>
+
+                <p
+                    id="dailyRollsText"
+                    class="daily-rolls-text"
+                >
+                </p>
+
+            </div>
+
+
+            <button
+                id="nextDay"
+                class="day-arrow"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+        <div
+            id="dayDots"
+            class="day-dots"
+        >
+        </div>
+
+
+        <section
+            id="tasksContainer"
+            class="tasks-container"
+        >
+        </section>
+
+    </main>
+
+
+    <script src="game.js"></script>
+    <script src="tasks.js"></script>
+
+</body>
+
+</html>
